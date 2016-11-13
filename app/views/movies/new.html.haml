@@ -1,0 +1,9 @@
+%h2 Create a new Movie record
+
+=form_tag movies_path, :method => :post do
+  
+  =render :partial => 'movie_form'
+  
+  %p=submit_tag 'Save changes'
+  
+%p=button_to 'Cancel', movies_path, :method => :get
